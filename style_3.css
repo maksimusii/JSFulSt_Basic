@@ -1,0 +1,10 @@
+.content {
+    display: flex;
+}
+.product{
+    width: 240px;
+    margin-left: 20px;
+}
+.desc{
+    display: none;
+}
