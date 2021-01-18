@@ -224,17 +224,14 @@ function addProductToBasket(product) {
 }
 getBasketProduct();
 
+//Оброботчик кнопки удаления
 function addRemoveBtnHandler() {
-  //let $productRemoveBtn
   $basketContent.addEventListener('click', function(evt) {
-   
     if(evt.target.tagName === 'I') {
-      
       const productIndx = Number(evt.target.dataset.id);
       basketProducts = basketProducts.filter(function (basketProduct) {
         return basketProduct.id !== productIndx;
       });
-      console.log(basketProducts);
       $basketContent.textContent = '';
       $basketBtnForward[0].classList.add('btnBasketForwardHide');
       getBusketContent();
