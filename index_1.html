@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/2dbefee81e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style_1.css">
+</head>
+<body>
+    <div class="basic_window">
+        <button class="basketBtn">Корзина</button>
+        <div id="basket" class='divModalHidden'>
+            <button class='basketClose'>&times;</button>
+            <div>
+                <p class="basketHeaders" data-id="1">Состав корзины</p>
+                <div id="basketContent" data-id="1"></div>
+                <button class="basketControlBtn forward btnBasketForwardHide">Далее</button>
+            </div>
+            <div>
+                <p class="basketHeaders" data-id="2">Адрес доставки</p>
+                <div id="delivery" data-id="2" class='divModalHidden'>
+                    <p>Адрес доставки:</p>
+                    <input type="text">
+                    <button class="basketControlBtn forward btnBasketForwardHide">Далее</button>
+                </div>
+                
+            </div>
+            <div>
+                <p class="basketHeaders" data-id="3">Комментарий</p>
+                <div id="comments" data-id="3" class='divModalHidden'>
+                    <p>Комментарий:</p>
+                    <input type="textarea">
+                    <button class="basketControlBtn forward btnBasketForwardHide">Завершить</button>
+                </div>
+            </div>
+            
+            <div id="busketSumm"></div>
+        </div>
+        <div id="catalog" class="content"></div>
+        <div id='modal_window' class='modal_window_close'></div>
+    </div>
+    
+    <script src="app_1.js"></script>
+</body>
+
+</html>

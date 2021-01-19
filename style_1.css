@@ -1,0 +1,107 @@
+.content {
+    display: flex;
+}
+.product{
+    width: 240px;
+    margin-left: 20px;
+}
+.desc{
+    display: none;
+}
+button {
+    width: 80px;
+    height: 30px;
+    background-color: green;
+}
+.item {
+padding-right: 10px;
+height: 20px;
+width: 150px;
+}
+#basket {
+    
+    border: 1px solid black;
+    width: 400px;
+}
+
+.basic_window{
+    position: relative;
+}
+.modal_window{
+    display: block;
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    width: 800px;
+    height: 600px;
+    z-index: 1;
+    box-shadow: 10px rgb(31, 70, 109);
+}
+.modal_window_close{
+    display: none;
+}
+.modalWindowsClose, .basketClose {
+    background-color: white;
+    width: 15px;
+    height: 15px;
+    display: block;
+    position: absolute;
+    border-radius: 10px;
+    font-size: 12px;
+    padding-left: 2px;
+    padding-top: 0px;
+    top: 2px;
+    left: 78%;
+}
+.divModal {
+    position: relative;
+}
+.divModalHidden {
+    display: none;
+}
+.productRemoveBtn {
+    display: block;
+    margin-top: 15px;
+    margin-right: 10px;
+}
+#basket {
+    position: absolute;
+    background-color: white;
+    top: 35px;
+    left: 30px;
+}
+.basketHeaders {
+    
+    width: 380px;
+    border: 1px solid black;
+    padding-left: 20px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+#basketSumm {
+    margin-left: 20px;
+}
+.basketHeader p {
+    height: 10px;
+    margin: 15px;
+}
+.basketControlBtn {
+    display: block;
+}
+.btnBasketForwardHide {
+    display: none;
+}
+.basketClose {
+    background-color: white;
+    width: 15px;
+    height: 15px;
+    display: block;
+    position: absolute;
+    border-radius: 10px;
+    font-size: 12px;
+    padding-left: 2px;
+    padding-top: 0px;
+    top: 2px;
+    left: 95%;
+}
+
