@@ -236,6 +236,10 @@ function addRemoveBtnHandler() {
       $basketBtnForward[0].classList.add('btnBasketForwardHide');
       getBusketContent();
       getBasketProduct();
+      if(basketProducts.length !== 0) {
+        $basketContent.insertAdjacentHTML('afterBegin', basketHeader);
+      }
+      
     }
   });
 }
